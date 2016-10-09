@@ -45,3 +45,15 @@ wait(.3)
 penDown()
 forward(1.2,2)
 penUp()
+
+#MOVE TO STARTING LOCATON OF LETTER T
+forward(2,1)
+turnLeft(1,1)
+forward(2,1)
+
+#LETTER T BEGINS
+penDown()
+forward(2,1)
+backward(1,1)
+turnLeft(2.48,1)
+forward(2,1)
