@@ -2,40 +2,32 @@
 from Myro import *
 init("sim") #if your simulator is not running
 
+def squareside(): #function for first three sides of square
+    forward(2,2)
+    wait(.5)
+    turnBy(90)
+  
+def triangleside(): #function for first two sides of triangle
+    penDown()
+    forward(1,2)
+    penUp()
+    wait(.1)
+    turnBy(120)
+
 #SQUARE BEGINS
 penDown()
+squareside()
+squareside()
+squareside()
 forward(2,2)
-wait(.5)
-turnBy(90)
-wait(.1)
-forward(2,2)
-wait(.5)
-turnBy(90)
-wait(.1)
-forward(2,2)
-wait(.5)
-turnBy(90)
-wait(.1)
-forward(2,2)
-wait(.1)
 penUp()
 
 #MOVE TO START LOCATION OF TRIANGLE
 forward(1,1)
 
 #TRIANGLE BEGINS
-penDown()
-forward(1,2)
-penUp()
-wait(.1)
-turnBy(120)
-wait(.1)
-penDown()
-forward(1,2)
-penUp()
-wait(.1)
-turnBy(120)
-wait(.3)
+triangleside()
+triangleside()
 penDown()
 forward(1,2.1)
 penUp()
