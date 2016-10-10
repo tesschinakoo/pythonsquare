@@ -34,9 +34,9 @@ penUp()
 wait(.5)
 
 #MOVE TO STARTING LOCATON OF LETTER T
-forward(2,1)
+forward(1.5,2)
 turnLeft(1,1)
-forward(2,1)
+forward(1.8,1)
 
 #LETTER T BEGINS
 penDown()
@@ -49,4 +49,23 @@ forward(2,1)
 penUp()
 wait(.5)
 
-forward(2,.5)
+#MOVE TO STARTING LOCATION OF LETTER K
+forward(.5,1)
+
+#LETTER K BEGINS
+penDown()
+forward(2,1)
+penUp()
+backward(1,1)
+turnBy(45)
+penDown()
+forward(.7,2)
+penUp()
+backward(.7,2)
+wait(.5)
+turnBy(90)
+penDown()
+forward(1.5,1)
+penUp()
+
+forward(3,1)
